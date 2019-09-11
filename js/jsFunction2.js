@@ -43,9 +43,7 @@ console.log("Expected output of multiply([1,2,3,4]) is 24  " + myFunctionTest(24
 
 // function to reverse string
 function reverse(s) {
-    var arr =s.split('');
-    arr.indexOf();
-    return arr.map(s=>arr[arr.length - arr.indexOf(s)-1]).reduce((t,s)=> t + '' + s,'');
+     return s.split('').map((s,i,arr)=>arr[arr.length - i-1]).reduce((t,s)=>t +''+s,'');
 
 }
 console.log("Expected output of reverse('brian') is nairb  " + myFunctionTest('nairb', function () {
